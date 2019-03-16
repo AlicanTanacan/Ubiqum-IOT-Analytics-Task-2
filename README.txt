@@ -29,4 +29,8 @@ Attribute Information:
 My Work:
 Version 1: It is about preparing and cleaning the original data set that can be acquired from UCI Machine Learning Repository. 
 Version 2: It is about exploratory data visualization and analyses in different time series. Part 1 of time series visualization.
-Version 3: Part 2 of time series visualization.
+Version 3: Part 2 of time series visualization. Yearly and Monthly analysis.
+Version 4: Part 3 of time series visualization. Weekly analysis.
+Version 5: Data analysis and forecasting according to the plan of attack.
+Version 6: joining the weather temperature and school holiday data with original data.
+

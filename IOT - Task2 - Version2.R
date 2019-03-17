@@ -1,6 +1,6 @@
 ### ----------------------- IOT ANALYTICS -------------------------- ###
 ### ---------- Task 2: Visualize and Analyze Energy Data ----------- ###
-### --------------------- by Alican Tanaçan ------------------------ ###
+### --------------------- by Alican TanaÃ§an ------------------------ ###
 ### ------ Version 2: Data Analysis and Visualization Part 1 ------- ###
 
 ## Libraries ----
@@ -20,6 +20,59 @@ EnergyData <- readRDS(file = "OriginalEnergyCleanData.rds")
 # Inspect the data
 str(EnergyData)
 summary(EnergyData)
+
+# How much energy this household consumed every year?
+EnergyData %>% 
+  filter(year(DateTime) == 2007) %>% 
+  mutate(MonthName = month(DateTime, label = T)) %>% 
+  mutate(DayName = day(DateTime)) %>% 
+  mutate(DayOfMonth = paste(DayName, MonthName)) %>% 
+  group_by(DayOfMonth) %>% 
+  summarise(meanGAP = mean(GAP),
+            meanSM0 = mean(SM0),
+            meanSM1 = mean(SM1),
+            meanSM2 = mean(SM2),
+            meanSM3 = mean(SM3)) -> Energy2007
+sum(Energy2007$meanGAP)
+
+EnergyData %>% 
+  filter(year(DateTime) == 2008) %>% 
+  mutate(MonthName = month(DateTime, label = T)) %>% 
+  mutate(DayName = day(DateTime)) %>% 
+  mutate(DayOfMonth = paste(DayName, MonthName)) %>% 
+  group_by(DayOfMonth) %>% 
+  summarise(meanGAP = mean(GAP),
+            meanSM0 = mean(SM0),
+            meanSM1 = mean(SM1),
+            meanSM2 = mean(SM2),
+            meanSM3 = mean(SM3)) -> Energy2008
+sum(Energy2008$meanGAP)
+
+EnergyData %>% 
+  filter(year(DateTime) == 2009) %>% 
+  mutate(MonthName = month(DateTime, label = T)) %>% 
+  mutate(DayName = day(DateTime)) %>% 
+  mutate(DayOfMonth = paste(DayName, MonthName)) %>% 
+  group_by(DayOfMonth) %>% 
+  summarise(meanGAP = mean(GAP),
+            meanSM0 = mean(SM0),
+            meanSM1 = mean(SM1),
+            meanSM2 = mean(SM2),
+            meanSM3 = mean(SM3)) -> Energy2009
+sum(Energy2009$meanGAP)
+
+EnergyData %>% 
+  filter(year(DateTime) == 2010) %>% 
+  mutate(MonthName = month(DateTime, label = T)) %>% 
+  mutate(DayName = day(DateTime)) %>% 
+  mutate(DayOfMonth = paste(DayName, MonthName)) %>% 
+  group_by(DayOfMonth) %>% 
+  summarise(meanGAP = mean(GAP),
+            meanSM0 = mean(SM0),
+            meanSM1 = mean(SM1),
+            meanSM2 = mean(SM2),
+            meanSM3 = mean(SM3)) -> Energy2010
+sum(Energy2010$meanGAP)
 
 ## Data Visualization by Dplyr and GGPlot2 ----
 

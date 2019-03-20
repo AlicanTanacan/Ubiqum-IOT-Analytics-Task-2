@@ -28,9 +28,11 @@ Attribute Information:
 
 My Work:
 Version 1: It is about preparing and cleaning the original data set that can be acquired from UCI Machine Learning Repository. 
-Version 2: It is about exploratory data visualization and analyses in different time series. Part 1 of time series visualization.
-Version 3: Part 2 of time series visualization. Yearly and Monthly analysis.
+Version 2: It is about exploratory data analyses and visualization in different time series. Daily Waste Energy Consumption Analysis and Yearly Pie Charts are in this version too. Part 1 of time series visualizations.
+Version 3: Part 2 of time series visualization. Yearly, Monthly and Daily analysis. Family energy usage patterns.
 Version 4: Part 3 of time series visualization. Weekly analysis.
 Version 5: Data analysis and forecasting according to the plan of attack.
 Version 6: joining the weather temperature and school holiday data with original data.
+Version 7: Modelization and Forecasting
+Version 8: Extra Analysis on Joined Data.
 

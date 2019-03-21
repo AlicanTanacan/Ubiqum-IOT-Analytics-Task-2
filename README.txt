@@ -33,6 +33,6 @@ Version 3: Part 2 of time series visualization. Yearly, Monthly and Daily analys
 Version 4: Part 3 of time series visualization. Weekly analysis.
 Version 5: Data analysis and forecasting according to the plan of attack.
 Version 6: joining the weather temperature and school holiday data with original data.
-Version 7: Modelization and Forecasting
-Version 8: Extra Analysis on Joined Data.
+Version 7: Modelization and Forecasting on 2010 test and 2011.
+Version 8: Extra Analysis on Joined Data for presentation.
 

@@ -35,4 +35,5 @@ Version 5: Data analysis and forecasting according to the plan of attack.
 Version 6: joining the weather temperature and school holiday data with original data.
 Version 7: Modelization and Forecasting on 2010 test and 2011 with Arima, Seasonal Naive, LM etc.
 Version 8: Extra Analysis on Joined Data for presentation.
+Shiny Workshop
 
